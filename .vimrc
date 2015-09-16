@@ -77,6 +77,9 @@ let g:vim_markdown_folding_disabled=1
 " force vim to use 265 colors
 set term=screen-256color
 
+" remove trailing spaces for certain file types
+autocmd FileType python,javascript,ruby,c,cpp,java,php autocmd BufWritePre <buffer> :%s/\s\+$//e
+
 "------------ Mappings --------------"
 
 "+ and - to resize splited windows"
