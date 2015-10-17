@@ -39,7 +39,8 @@ let g:airline_theme = 'wombatseocam'
 let g:airline_powerline_fonts = 1
 let g:airline#extensions#hunks#enabled = 0
 let g:airline#extensions#branch#enabled = 1
-let g:airline#extensions#tabline#enabled = 1
+" tablines are cool but are degrading performance
+"let g:airline#extensions#tabline#enabled = 1
 
 " Keep git sign column as default (+, -, ~, etc.)
 "let g:gitgutter_override_sign_column_highlight = 0
