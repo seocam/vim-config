@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# update submodules
+git submodule update --init --recursive
+
 cp .vimrc ~/.vimrc
 
 echo
