@@ -96,3 +96,10 @@ nnoremap <Leader>f :bn<CR>
 
 " Makes Ctrl-P plugin ignore .git and everything on .gitignore "
 let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard']
+
+" Let Ctrl-P open buffers:
+" Where:
+"   i - all files as hidden buffers.
+"   j - after opening, jump to the first opened tab or window.
+" Source: http://stackoverflow.com/questions/33315406/open-all-selected-files-as-hidden-buffer
+let g:ctrlp_open_multiple_files = 'ij'
