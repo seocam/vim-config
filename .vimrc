@@ -52,8 +52,8 @@ highlight LineNr ctermbg=235
 
 "tab config"
 set ts=4
-setlocal expandtab
-setlocal softtabstop=4
+set expandtab
+set softtabstop=4
 
 " 4 spaces for indenting
 set shiftwidth=4
