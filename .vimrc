@@ -93,3 +93,6 @@ vmap <s-tab> <gv
 
 nnoremap <Leader>b :bp<CR>
 nnoremap <Leader>f :bn<CR>
+
+" Makes Ctrl-P plugin ignore .git and everything on .gitignore "
+let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard']
