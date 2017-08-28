@@ -103,3 +103,6 @@ let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclu
 "   j - after opening, jump to the first opened tab or window.
 " Source: http://stackoverflow.com/questions/33315406/open-all-selected-files-as-hidden-buffer
 let g:ctrlp_open_multiple_files = 'ij'
+
+" Required to make highlight work for JSX with pure JS
+let g:jsx_ext_required = 0
