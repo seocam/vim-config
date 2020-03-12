@@ -7,6 +7,14 @@ set nocompatible
 " Set background type"
 set background=dark
 
+" Check for file changes and autoreload it
+" https://stackoverflow.com/questions/2157914/can-vim-monitor-realtime-changes-to-a-file/48296697#48296697
+set autoread | au CursorHold * checktime | call feedkeys("lh")
+
+" Disable visualbell (screen bliking/flashing)
+set novisualbell
+set visualbell t_vb=
+
 "color scheme"
 " colorscheme elflord
 " colorscheme delek
@@ -106,3 +114,6 @@ let g:ctrlp_open_multiple_files = 'ij'
 
 " Required to make highlight work for JSX with pure JS
 let g:jsx_ext_required = 0
+
+command PreCommit !pre-commit run --files %
+:map <F8> :w \| PreCommit<CR>
