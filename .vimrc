@@ -87,7 +87,7 @@ let g:vim_markdown_folding_disabled=1
 set term=screen-256color
 
 " remove trailing spaces for certain file types
-autocmd FileType python,javascript,ruby,c,cpp,java,php autocmd BufWritePre <buffer> :%s/\s\+$//e
+autocmd FileType python,javascript,ruby,c,cpp,java,php,Dockerfile,sh autocmd BufWritePre <buffer> :%s/\s\+$//e
 
 "------------ Mappings --------------"
 
