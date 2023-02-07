@@ -84,7 +84,9 @@ set spelllang=en,pt_br
 let g:vim_markdown_folding_disabled=1
 
 " force vim to use 265 colors
-set term=screen-256color
+if !has('nvim')
+    set term=screen-256color
+endif
 
 " remove trailing spaces for certain file types
 autocmd FileType python,javascript,ruby,c,cpp,java,php,Dockerfile,sh autocmd BufWritePre <buffer> :%s/\s\+$//e
