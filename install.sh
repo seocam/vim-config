@@ -9,6 +9,13 @@ echo
 echo "vimrc installed into $HOME/.vimrc"
 echo
 
+mkdir -p ~/.config/nvim/
+cp init.vim ~/.config/nvim/init.vim
+
+echo
+echo "Configured compatibility with neoVim"
+echo
+
 mkdir -p ~/.vim/
 rsync -vr .vim/ ~/.vim
 
